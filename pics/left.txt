@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Articles</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f1014;
+            color: #f1f1f1;
+        }
+
+        .fcontainer {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .featured-articles {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .article-grid-bottom {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .article-card {
+            background-color: #1e1f23;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .article-content {
+            padding: 20px;
+        }
+
+        .article-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #a4a4a4;
+            margin-bottom: 10px;
+        }
+
+        .article-tags {
+            font-size: 14px;
+            color: #a4a4a4;
+        }
+
+        .article-read-time {
+            font-size: 14px;
+            color: #a4a4a4;
+        }
+
+        .article-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .article-excerpt {
+            font-size: 14px;
+            color: #a4a4a4;
+            margin-bottom: 10px;
+        }
+
+        .article-link {
+            color: #00b8d4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .show-more {
+            display: block;
+            margin: 0 auto;
+            background-color: #00b8d4;
+            color: #1e1f23;
+            border: none;
+            border-radius: 4px;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .show-more:hover {
+            background-color: #00a0b8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="featured-articles">
+            <div class="article-card">
+                <div class="image-container">
+                    <img src="mountain.jpg" alt="Mountain Landscape">
+                </div>
+                <div class="article-content">
+                    <div class="article-info">
+                        <span class="article-tags">#Travel #Nature</span>
+                        <span class="article-read-time">4 mins read</span>
+                    </div>
+                    <h3 class="article-title">Exploring the Peaks: A Journey Through Mountain Trails</h3>
+                    <p class="article-excerpt">Emily Stevens</p>
+                    <a href="#" class="article-link">Read more</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="image-container">
+                    <img src="city.jpg" alt="City Skyline">
+                </div>
+                <div class="article-content">
+                    <div class="article-info">
+                        <span class="article-tags">#Urban #Architecture</span>
+                        <span class="article-read-time">5 mins read</span>
+                    </div>
+                    <h3 class="article-title">Modern Cityscapes: Design and Innovation</h3>
+                    <p class="article-excerpt">Michael Rodriguez</p>
+                    <a href="#" class="article-link">Read more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-grid-bottom">
+            <div class="article-card">
+                <div class="image-container">
+                    <img src="eagle.jpg" alt="Eagle">
+                </div>
+                <div class="article-content">
+                    <div class="article-info">
+                        <span class="article-tags">#Design #Movie</span>
+                        <span class="article-read-time">6 mins read</span>
+                    </div>
+                    <h3 class="article-title">Self-observation is the first step of inner unfolding</h3>
+                    <p class="article-excerpt">Joseph</p>
+                    <a href="#" class="article-link">Read more</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="image-container">
+                    <img src="village.jpg" alt="Village">
+                </div>
+                <div class="article-content">
+                    <div class="article-info">
+                        <span class="article-tags">#Design #Movie</span>
+                        <span class="article-read-time">6 mins read</span>
+                    </div>
+                    <h3 class="article-title">Self-observation is the first step of inner unfolding</h3>
+                    <p class="article-excerpt">Joseph</p>
+                    <a href="#" class="article-link">Read more</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div class="image-container">
+                    <img src="underwater.jpg" alt="Underwater">
+                </div>
+                <div class="article-content">
+                    <div class="article-info">
+                        <span class="article-tags">#Design #Movie</span>
+                        <span class="article-read-time">6 mins read</span>
+                    </div>
+                    <h3 class="article-title">Self-observation is the first step of inner unfolding</h3>
+                    <p class="article-excerpt">Joseph</p>
+                    <a href="#" class="article-link">Read more</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="show-more">Show More Posts ›</button>
+    </div>
+</body>
+</html>
+
+
+
+
+
+.show-more {
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(0, 184, 212);
+    color: #ffffff;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.show-more:hover {
+    background-color: #00a0b8;
+}
